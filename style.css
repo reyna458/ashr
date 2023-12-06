@@ -14,16 +14,15 @@ masthead {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1;
+    grid-template-areas: "logo . menu menu"
 }
 
 .logocontainer {
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-area: "logo";
 }
 
 .menu {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: "menu";
 }
 
 @media (max-width: 450px) {
