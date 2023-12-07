@@ -1,37 +1,41 @@
 body {
     background-color: #ffddb0;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    margin: auto;
 }
 
-.masthead {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.aboutme {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.buttons {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-masthead {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1;
-    grid-template-areas: "logo . menu menu"
-}
-
-.logocontainer {
-    grid-area: "logo";
+h1 {
+    text-align: left;
+    margin-left: 15%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .menu {
-    grid-area: "menu";
+    background-color: #AE6300;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: sticky;
+}
+
+li {
+    display:inline-block;
+}
+
+a:link {
+    color:white
+}
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color:#E82D62
+}
+
+a:active {
+    color: white;
 }
 
 @media (max-width: 450px) {
