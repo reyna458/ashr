@@ -2,10 +2,19 @@ body {
     background-color: #ffddb0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto;
 }
 
 .masthead {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.aboutme {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.buttons {
     grid-column-start: 2;
     grid-column-end: 3;
 }
