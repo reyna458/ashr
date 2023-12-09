@@ -12,6 +12,28 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    size: 50px;
+}
+
+.aboutme {
+    background-color: #ffddb0;
+}
+
+.welcome {
+    background-color:#ffddb0;
+}
+
+.buttons {
+    background-color:#ffddb0;
+    padding: 1%;
+}
+
+.logocontainer {
+    background-color: #ffddb0;
+}
+
 .menu {
     background-color: #AE6300;
     margin-left: 15%;
