@@ -1,19 +1,65 @@
 body {
     background-color: #75022B;
+    margin: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.menu {
+    background-image: url(images/clue-page-topper.png);
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    text-align: right;
+    position: sticky;
+    font-family: 'Playfair Display', serif;
+}
+
+li {
+    display:inline-block;
 }
 
 .clueposter {
     background-color: #ebdcb1;
+    padding: 10%;
 }
 
 .shirts {
     background-color: #ebdcb1;
+    padding: 10%;
+}
+
+.shirttext {
+    background-color: #ebdcb1;
+    padding: 10%;
 }
 
 .programfilter {
     background-color: #ebdcb1;
+    padding: 10%;
 }
 
 .buttons {
     background-color: #ebdcb1;
+    background-image: url(images/buttons-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.buttons img:hover{
+    transform: scale(1.15);
+}
+
+.footer {
+    background-color: #ebdcb1;
+    padding: 10%;
+}
+
+@media (max-width: 846px) {
+    .menu {
+        padding-top: 1%;
+        margin-top: 1%;
+    }
 }
