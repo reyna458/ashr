@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 body {
     background-color: aliceblue;
+    margin: 5%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+    color:#E82D62;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    color:#E82D62;
+    text-align: center;
+}
+
+.masthead {
+    text-align: center;
+}
+
+.menu {
+    background-image: url(images/jd-menu.png);
+    background-size: 20%;
+    background-position: center;
+    background-repeat:no-repeat;
+    padding: 2%;
+    align-items: center;
+}
+
+li {
+    display:inline-block;
+}
+
+.footer {
+    background-image: url(images/jd-menu.png);
+    background-size: 20%;
+    background-position: center;
+    background-repeat:no-repeat;
+    padding: 5%;
+    align-items: center;
+}
+
+.buttons img:hover{
+    transform: scale(1.15);
 }

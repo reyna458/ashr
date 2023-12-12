@@ -26,6 +26,10 @@ h1 {
     background-repeat: repeat-x;
 }
 
+.menu {
+    filter:drop-shadow(-3px 3px #1a0044)
+}
+
 .mainposter {
     background-color:#4D2951;
     text-align:center;
