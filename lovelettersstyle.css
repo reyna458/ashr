@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 body {
     background-color: #F7A6A3;
+    margin: 5%;
+    background-image: url(images/lovelettersbg.png);
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    text-align:center;
+    background-repeat: repeat-y;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    background: url(images/paperscrap.png);
+    height: 69px;
+    width: auto;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    color:transparent;
+}
+
+.issuesheader {
+    background-image: url(images/LLbg.png);
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.issues-pics {
+    background-image: url(images/LLbg.png);
+    padding: 5%;
+}
+
+.instagram  {
+    background-image: url(images/LLbg.png);
+    padding: 5%;
+}
+
+.website {
+    background-image: url(images/LLbg.png);
+    padding: 5%;
+}
+
+.buttons {
+    background-image: url(images/LLbg.png);
+    padding: 5%;
+}
+
+.footer {
+    background-color: maroon;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+li {
+    display:inline-block;
+}
+
+.buttons img:hover{
+    transform: scale(1.15);
+}
+
+@media (max-width: 900px) {
+    body {
+        background-image: none;
+    }
 }
