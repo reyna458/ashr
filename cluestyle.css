@@ -38,7 +38,7 @@ li {
 
 .shirts {
     background-color: #ebdcb1;
-    padding: 4%;
+    padding: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -48,7 +48,7 @@ li {
 
 .program {
     background-color:#ebdcb1;
-    padding: 4%;
+    padding: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -57,10 +57,30 @@ li {
 
 }
 
+.filter {
+    background-color:#ebdcb1;
+    padding: 1%;
+    background-image:url(images/LLbg.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "fvideo ftext"
+}
+
+.filter-text {
+    grid-area:"ftext";
+}
+
+.filtervideo {
+    grid-area:"fvideo";
+    padding: 4%;
+}
+
 .program-text {
     grid-area: "ptext";
     background-image: url(images/programtextbg.png);
-    background-size: 105%;
+    background-size: 100%;
     background-repeat:no-repeat;
     background-position:top center;
 }
@@ -98,6 +118,7 @@ h2 {
 p {
     font-family: "Special Elite", cursive;
     margin: 15%;
+    font-size:
 }
 
 .postertext {
@@ -134,9 +155,7 @@ p {
 
 .buttons {
     background-color: #ebdcb1;
-    padding-bottom: 3%;
-    width: 100%;
-    height: auto;
+    padding:5%;
 }
 
 .buttons img:hover{
@@ -146,13 +165,20 @@ p {
 .footer {
     background-color: #ebdcb1;
     padding: 10%;
-    background-color: #AE6300;
+    background-color: #540000;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 
 @media (max-width: 846px) {
      .menu {
