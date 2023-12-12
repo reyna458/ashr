@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
 body {
     background-color: #4D2951;
+    background-image: url(images/addamsbg.png);
+    background-repeat: repeat;
+    margin: 5%;
+    text-align: center;
+    color:white;
+}
+
+li {
+    display:inline-block;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 0.25em;
+    text-shadow: 1px 1px 2px black;
+}
+
+.masthead {
+    text-align:center;
+    padding:5%;
+    background-image: url(images/addamsmastheadbg.png);
+    background-repeat: repeat-x;
+}
+
+.mainposter {
+    background-color:#4D2951;
+    text-align:center;
+    padding:2%;
+}
+
+.shirts {
+    background-color:#4D2951;
+    text-align:center;
+    padding:5%;
+}
+
+.instagrid {
+    background-color:#4D2951;
+    text-align:center;
+    padding:5%;
+}
+
+.filter {
+    background-color:#4D2951;
+    text-align:center;
+    padding:5%;
+}
+
+.buttons {
+    background-color:#4D2951;
+    text-align:center;
+    padding:5%;
+}
+
+.buttons img:hover{
+    transform: scale(1.15);
+}
+
+.footer {
+    background-color: #4D2951;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
