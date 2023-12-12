@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 
 body {
     background-color: #4D2951;
@@ -14,16 +15,26 @@ li {
 }
 
 h1 {
-    font-family: 'Creepster', cursive;
+    font-family: 'Nosifer', cursive;
     letter-spacing: 0.25em;
     text-shadow: 1px 1px 2px black;
 }
 
+h2 {
+    font-family: 'Nosifer', cursive;
+}
+
+p {
+    margin: 5%;
+    font-family:
+}
 .masthead {
     text-align:center;
     padding:5%;
     background-image: url(images/addamsmastheadbg.png);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 75%;
 }
 
 .menu {
@@ -34,8 +45,20 @@ h1 {
     background-color:#4D2951;
     text-align:center;
     padding:2%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr;
+    grid-template-areas:
+    "text pic"
 }
 
+.mainposter-text {
+    grid-area: "text";
+}
+
+.poster-pic {
+    grid-area: "pic";
+}
 .shirts {
     background-color:#4D2951;
     text-align:center;
