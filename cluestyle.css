@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 body {
     background-color: #75022B;
+    background-image: url(images/cluebg.png);
+    background-repeat: repeat-y;
     margin: 5%;
     width: 90%;
     text-align: center;
@@ -7,43 +11,104 @@ body {
 
 .menu {
     background-image: url(images/clue-page-topper.png);
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     padding-top: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     text-align: right;
     position: sticky;
-    font-family: 'Playfair Display', serif;
 }
 
 li {
     display:inline-block;
 }
 
+.main {
+    display: grid;
+    background-color: #ebdcb1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.clueposter .shirts .programfilter {
+    max-height: 300px;
+    overflow-y: scroll;
+    grid-gap: 25%;
+}
+
+.postertitle {
+    background: url(images/paperbg.png);
+    font-family: 'Permanent Marker', cursive;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: fit-content;
+    height: auto;
+    grid-area:"poster-title";
+    grid-column-start: 1;
+    grid-row: 1;
+}
+
 .clueposter {
     background-color: #ebdcb1;
     padding: 10%;
+    grid-column-start: 2;
+    grid-row: 1
+}
+
+.plumposter {
+    grid-column-start: 1;
+    grid-row: 2;
+}
+
+.plumtext {
+    grid-column-start: 2;
+    grid-row: 2;
 }
 
 .shirts {
     background-color: #ebdcb1;
-    padding: 10%;
+    padding: 4%;
+    grid-column-start: 1;
+    grid-row: 3;
 }
 
 .shirttext {
     background-color: #ebdcb1;
-    padding: 10%;
+    padding: 4%;
+    grid-column-start: 2;
+    grid-row: 3;
 }
 
 .programfilter {
     background-color: #ebdcb1;
-    padding: 10%;
+    padding: 4%;
+}
+
+.program-text {
+    grid-column-start: 1;
+    grid-row: 4;
+}
+
+.programimage {
+    grid-area:"programimage";
+    grid-column-start: 2;
+    grid-row: 4;
+}
+
+.filter-text {
+    grid-column-start: 2;
+    grid-row: 5;
+}
+
+.filtervideo {
+    grid-column-start: 1;
+    grid-row: 5;
 }
 
 .buttons {
     background-color: #ebdcb1;
-    background-image: url(images/buttons-bg.png);
-    background-repeat: no-repeat;
+    padding-bottom: 3%;
     width: 100%;
     height: auto;
 }
@@ -55,11 +120,19 @@ li {
 .footer {
     background-color: #ebdcb1;
     padding: 10%;
+    background-color: #AE6300;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 @media (max-width: 846px) {
-    .menu {
-        padding-top: 1%;
-        margin-top: 1%;
-    }
+     .menu {
+        padding-bottom: 0%;
+     }
+     body {
+        margin: 5%;
+     }
 }
