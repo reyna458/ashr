@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 body {
     background-color: #212635;
+    margin: 5%;
+    background-image: url(images/miscbg.png);
+    width: 90%;
+    height: auto;
+    background-size: 100%;
+    text-align:center;
+    background-repeat: no-repeat;
+}
+
+li {
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.buttons img:hover{
+    transform: scale(1.15);
+}
+
+
+.menu {
+    padding: 1em;
+}
+
+.rainbowletters {
+    background-color: #212635;
+    padding: 2%;
+}
+
+.postcard {
+    background-color: #212635;
+    padding: 2%;
+}
+
+.VVTposters {
+    background-color: #212635;
+    padding: 2%;
+}
+
+.cabaret {
+    background-color: #212635;
+    padding: 2%;
 }
 
 h1 {
@@ -16,4 +63,13 @@ h2 {
 
 p {
     color: white;
+}
+
+.footer {
+    background-color: #212635;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
