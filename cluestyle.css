@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 body {
     background-color: #75022B;
@@ -11,6 +12,7 @@ body {
 
 .menu {
     background-image: url(images/clue-page-topper.png);
+    background: size 50%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -24,86 +26,110 @@ li {
     display:inline-block;
 }
 
-.main {
-    display: grid;
-    background-color: #ebdcb1;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.clueposter .shirts .programfilter {
-    max-height: 300px;
-    overflow-y: scroll;
-    grid-gap: 25%;
-}
-
-.postertitle {
-    background: url(images/paperbg.png);
-    font-family: 'Permanent Marker', cursive;
-    background-repeat: no-repeat;
-    text-align: center;
-    width: fit-content;
-    height: auto;
-    grid-area:"poster-title";
-    grid-column-start: 1;
-    grid-row: 1;
-}
-
 .clueposter {
-    background-color: #ebdcb1;
-    padding: 10%;
-    grid-column-start: 2;
-    grid-row: 1
-}
-
-.plumposter {
-    grid-column-start: 1;
-    grid-row: 2;
-}
-
-.plumtext {
-    grid-column-start: 2;
-    grid-row: 2;
+    background-color:#ebdcb1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "postertext posterimage"
+    "plumposter plumtext"
 }
 
 .shirts {
     background-color: #ebdcb1;
     padding: 4%;
-    grid-column-start: 1;
-    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "pic text"
 }
 
-.shirttext {
-    background-color: #ebdcb1;
+.program {
+    background-color:#ebdcb1;
     padding: 4%;
-    grid-column-start: 2;
-    grid-row: 3;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "ptext pimage"
 
-.programfilter {
-    background-color: #ebdcb1;
-    padding: 4%;
 }
 
 .program-text {
-    grid-column-start: 1;
-    grid-row: 4;
+    grid-area: "ptext";
+    background-image: url(images/programtextbg.png);
+    background-size: 105%;
+    background-repeat:no-repeat;
+    background-position:top center;
 }
 
 .programimage {
-    grid-area:"programimage";
-    grid-column-start: 2;
-    grid-row: 4;
+    grid-area: "pimage"
 }
 
-.filter-text {
-    grid-column-start: 2;
-    grid-row: 5;
+.shirtpicture {
+    grid-area: "pic";
 }
 
-.filtervideo {
-    grid-column-start: 1;
-    grid-row: 5;
+.shirttext {
+    grid-area: "text";
+    background-color:#ebdcb1;
+    background-image: url(images/sweattextbg.png);
+    background-position:top center;
+    background-repeat:no-repeat;
+}
+
+#poster {
+    margin: 5%;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    margin:15%;
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    margin-top: 20%;
+}
+
+p {
+    font-family: "Special Elite", cursive;
+    margin: 15%;
+}
+
+.postertext {
+    grid-area:"postertext";
+    background-image: url(images/cluetextbg.png);
+    margin-bottom: 10%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.posterimage {
+    grid-area:"posterimage";
+}
+
+.plumposter {
+    grid-area:"plumposter"
+}
+
+.plumtext {
+    grid-area:"plumtext";
+    background-image: url(images/cluetextbg.png);
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#plum {
+    margin-top:15%;
+}
+
+.clueposter {
+    background-color: #ebdcb1;
+    padding: 5%;
 }
 
 .buttons {

@@ -7,8 +7,7 @@ body {
 }
 
 h1 {
-    text-align: left;
-    margin-left: 15%;
+    text-align: center;
     font-family: 'Playfair Display', serif;
 }
 
@@ -19,6 +18,10 @@ h2 {
 
 .aboutme {
     background-color: #ffddb0;
+}
+
+.photo {
+    padding: 2.5%;
 }
 
 .welcome {
@@ -38,8 +41,8 @@ h2 {
     background-color: #AE6300;
     margin-left: 15%;
     margin-right: 15%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: sticky;
     font-family: 'Playfair Display', serif;
 }
