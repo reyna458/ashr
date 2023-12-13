@@ -22,12 +22,35 @@ h1 {
 
 h2 {
     font-family: 'Nosifer', cursive;
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h3 {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    padding: 0%;
+}
+
+#posttitle {
+    margin-right: 25%;
+    font-size: 200%;
+    line-height:100%;
+}
+
+#shirtwords {
+    margin: 5%;
+    padding: 0%;
+    font-size:90%;
 }
 
 p {
-    margin: 5%;
-    font-family:
+    margin: 25%;
+    font-family: 'Smythe', cursive;
+    font-size: 150%;
 }
+
 .masthead {
     text-align:center;
     padding:5%;
@@ -54,15 +77,37 @@ p {
 
 .mainposter-text {
     grid-area: "text";
+    background-image: url(images/postertextbg.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
 }
 
 .poster-pic {
     grid-area: "pic";
 }
+
 .shirts {
     background-color:#4D2951;
     text-align:center;
-    padding:5%;
+    padding:2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "front stext back"
+}
+
+.shirtfront {
+    grid-area:"front"
+}
+
+.shirttext {
+    grid-area:"stext"
+}
+
+.shirtback {
+    grid-area:"back"
 }
 
 .instagrid {
@@ -94,4 +139,19 @@ p {
     margin-bottom: 5%;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+a:link {
+    color:white
+}
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color:#E82D62;
+}
+
+a:active {
+    color: white;
 }
