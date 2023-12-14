@@ -25,12 +25,16 @@ h1 {
     color:transparent;
 }
 
+p {
+    font-family: 'Playfair Display', serif;
+}
+
 .issuesheader {
     background-image: url(images/LLbg.png);
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 
 .issues-pics {
@@ -38,9 +42,32 @@ h1 {
     padding: 5%;
 }
 
+h3 {
+    font: size 200%;
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-size:200%;
+    font-family: 'Playfair Display', serif;
+}
+
 .instagram  {
     background-image: url(images/LLbg.png);
     padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.instagram-text {
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align:left;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .website {
