@@ -78,9 +78,3 @@ a:hover {
 a:active {
     color: white;
 }
-
-@media (max-width: 450px) {
-    body {
-        background-color: aqua;
-    }
-}
