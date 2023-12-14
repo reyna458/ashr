@@ -39,10 +39,10 @@ h3 {
     line-height:100%;
 }
 
-#shirtwords {
-    margin: 5%;
-    padding: 0%;
-    font-size:90%;
+h4 {
+    margin: 15%;
+    font-family: 'Smythe', cursive;
+    font-size:150%;
 }
 
 p {
@@ -99,7 +99,8 @@ p {
 }
 
 .shirtfront {
-    grid-area:"front"
+    grid-area:"front";
+    padding: 1%;
 }
 
 .shirttext {
@@ -107,21 +108,47 @@ p {
 }
 
 .shirtback {
-    grid-area:"back"
+    grid-area:"back";
+    padding: 1%;
 }
 
 .instagrid {
     background-color:#4D2951;
     text-align:center;
     padding:5%;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    "gtext gpic"
+}
+
+.instagrid-text {
+    grid-area:"gtext"
+}
+
+.instagrid-picture {
+    grid-area:"gpic";
 }
 
 .filter {
     background-color:#4D2951;
     text-align:center;
     padding:5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "fvideo ftext"
 }
 
+.filtervideo {
+    grid-area:"fvideo";
+}
+
+.filtertext {
+    grid-area:"ftext"
+}
 .buttons {
     background-color:#4D2951;
     text-align:center;
