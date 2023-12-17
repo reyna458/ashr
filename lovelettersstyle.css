@@ -42,6 +42,18 @@ p {
     padding: 5%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
+
 h3 {
     font: size 200%;
     font-family: 'Playfair Display', serif;

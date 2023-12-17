@@ -24,12 +24,33 @@ h2 {
     transform: scale(1.15);
 }
 
+p {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 .menu {
     padding: 1em;
 }
 
 .rainbowletters {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "text image"
+}
+
+.rainbowtext {
+    grid-area:"text";
+    background-color: #212635;
+    padding: 2%;
+}
+
+.rainbow-cover {
+    grid-area:"image";
     background-color: #212635;
     padding: 2%;
 }
@@ -37,11 +58,77 @@ h2 {
 .postcard {
     background-color: #212635;
     padding: 2%;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "postimage posttext"
 }
 
-.VVTposters {
+.postcard-text {
+    grid-area:"posttext";
     background-color: #212635;
     padding: 2%;
+}
+
+.postcard-image {
+    grid-area:"postimage";
+    background-color: #212635;
+    padding: 2%;
+}
+
+.miniposters {
+    background-color: #212635;
+    padding: 2%;
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.miniposterstext {
+    grid-area:"MPtext";
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.ourprimaryproblem {
+    grid-area:"OPP";
+    grid-column:1;
+    grid-row:1;
+}
+
+h3 {
+    color:white;
+}
+
+.oodone {
+    grid-area:"oodone";
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.promisingyoungwriter {
+    grid-area:"PYW";
+    grid-column:1;
+    grid-row: 2;
+}
+
+.bigposter {
+    background-color: #212635;
+    padding: 2%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "maintext mainposter"
+}
+
+.mainposter {
+    grid-area:"mainposter"
+}
+
+.postertext {
+    grid-area:"maintext"
 }
 
 .cabaret {
@@ -65,6 +152,8 @@ p {
     color: white;
 }
 
+
+
 .footer {
     background-color: #212635;
     margin-left: 15%;
@@ -72,4 +161,46 @@ p {
     margin-bottom: 5%;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+a:link {
+    color:white
+}
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color:#E82D62;
+}
+
+a:active {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
+
+ @media screen {
+    .rainbowletters {
+        display:block;
+    }
+    .postcard {
+        display:block;
+    }
+    .miniposters {
+        display:block;
+    }
+    .bigposter {
+        display:block;
+    }
 }

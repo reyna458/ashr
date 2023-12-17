@@ -168,6 +168,18 @@ p {
     padding-bottom: 25px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
+
 a:link {
     color:white
 }
@@ -181,4 +193,23 @@ a:hover {
 
 a:active {
     color: white;
+}
+
+@media screen {
+    .filter {
+        display:block;
+    }
+    .instagrid {
+        display:block;
+    }
+    .mainposter {
+        display:block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainposter-text {
+       background-image:none;
+       display:inline-block;
+    }
 }

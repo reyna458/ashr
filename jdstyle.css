@@ -44,6 +44,18 @@ li {
     align-items: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
+
 .buttons img:hover{
     transform: scale(1.15);
 }

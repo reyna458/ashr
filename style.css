@@ -47,6 +47,15 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
+p {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Playfair Display", serif;
+    background-color:#AE6300;
+    color:white;
+    padding: 2%;
+}
+
 li {
     display:inline-block;
 }

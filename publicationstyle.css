@@ -29,3 +29,15 @@ li {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }

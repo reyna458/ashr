@@ -178,10 +178,19 @@ img {
     width: auto\9; /* ie8 */
 }
 
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
 
 @media (max-width: 846px) {
      .menu {
         padding-bottom: 0%;
      }
-     
+
+     .program-text {
+        background-image:none;
+     }
+  
 }
