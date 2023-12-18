@@ -195,21 +195,25 @@ a:active {
     color: white;
 }
 
-@media screen {
-    .filter {
-        display:block;
-    }
-    .instagrid {
-        display:block;
-    }
-    .mainposter {
-        display:block;
-    }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .mainposter-text {
        background-image:none;
        display:inline-block;
+    }
+
+    .filter {
+        display:block;
+    }
+
+    .instagrid {
+        display:block;
+    }
+
+    .shirts {
+        display:block;
+    }
+
+    .mainposter {
+        display:block;
     }
 }

@@ -120,6 +120,13 @@ p {
     margin: 15%;
 }
 
+#sh {
+    font-family: "Special Elite", cursive;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding:2%;
+}
+
 .postertext {
     grid-area:"postertext";
     background-image: url(images/cluetextbg.png);
