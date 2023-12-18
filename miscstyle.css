@@ -101,6 +101,11 @@ h3 {
     color:white;
 }
 
+#jd {
+    width: 300px;
+    height: 300px;
+}
+
 .oodone {
     grid-area:"oodone";
     grid-column: 2;
@@ -190,7 +195,10 @@ video {
     width: auto;
  }
 
- @media screen {
+ @media (max-width:800px) {
+    body {
+        background-image: none;
+    }
     .rainbowletters {
         display:block;
     }

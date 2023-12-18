@@ -113,4 +113,13 @@ li {
     body {
         background-image: none;
     }
+
+    .title {
+        background:transparent;
+    }
+
+    h1 {
+        color:black;
+        font-size:larger;
+    }
 }
