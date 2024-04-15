@@ -44,6 +44,26 @@ li {
     align-items: center;
 }
 
+.almostfamous {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "pic textss"
+}
+
+.AFpic {
+    grid-area:"pic"
+}
+
+.AFtext {
+    grid-area:"text"
+}
+
+p {
+    font-family: 'Special Elite', cursive;
+    color:#E82D62;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;

@@ -2,19 +2,56 @@
 
 body {
     background-color: white;
-    background-image: url(images/publicationsbg.png);
-    background-repeat:repeat-x;
+    background-image: url(images/LLbg.png);
+    background-repeat: repeat;
     background-size: 900px;
     background-position: bottom;
     text-align: center;
 }
 
+footer {
+    background-color: white;
+    background-image: url(images/publicationsbg.png);
+    background-size: 900px;
+    background-position: center bottom;
+    text-align: center;
+    background-attachment: fixed;
+}
+
 h1 {
     font-family: 'Special Elite', cursive;
+    font-size:xx-large;
+}
+
+p {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 li {
     display:inline-block;
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    color: black;
+}
+
+h3 {
+    font-family: 'Courier Prime', cursive;
+    color: black;
+    text-align:  center;
+    font-size: xx-large;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main {
+    background-color: white;
+    padding: 5px;
+    margin: 50px;
+    display: grid;
 }
 
 .buttons img:hover{
