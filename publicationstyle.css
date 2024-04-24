@@ -10,12 +10,108 @@ body {
 }
 
 footer {
-    background-color: white;
-    background-image: url(images/publicationsbg.png);
+    background-color: black;
     background-size: 900px;
     background-position: center bottom;
     text-align: center;
     background-attachment: fixed;
+}
+
+.writing {
+    display:grid;
+    grid-template-columns: 1fr
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "title subway"
+}
+
+.writingtitle {
+    grid-area:"title"
+}
+
+.subway {
+    grid-area:"subway";
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "subpic subhead"
+    "subpic subbody"
+}
+
+.subwaypic {
+    grid-area:"subpic";
+    grid-row: span 2;
+    margin:15%;
+}
+
+.subwayheadline {
+    grid-area:"subhead";
+    text-align: left;
+}
+
+.subwaybody {
+    grid-area:"subbody";
+    text-align: left;
+}
+
+.visuals {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "vtitle"
+    "waterbottle"
+    "eleven"
+}
+
+.visualtitle {
+    grid-area:"vtitle";
+}
+
+.waterbottle {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "wbimage wbheadline"
+    "wbimage wbtext"
+}
+
+.wbimage {
+    grid-area:"wbimage";
+    grid-row: span 2;
+    margin:15%;
+}
+
+.wbheadline {
+    grid-area:"wbhead"
+}
+
+.wbtext {
+    grid-area:"wbtext"
+}
+
+.eleven {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "eleveniamge elevenhead"
+    "elevenimage eleventext"
+}
+
+.elevenpic {
+    grid-area:"elevenimage";
+    grid-row: span 2;
+    margin: 15%
+}
+
+.elevenheadline {
+    grid-area:"elevenhead"
+}
+
+.eleventext {
+    grid-area:"eleventext"
 }
 
 h1 {
@@ -24,9 +120,8 @@ h1 {
 }
 
 p {
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    text-align: left;
+    margin-left:2%;
 }
 
 li {
@@ -41,10 +136,9 @@ h2 {
 h3 {
     font-family: 'Courier Prime', cursive;
     color: black;
-    text-align:  center;
+    text-align:  left;
+    margin-left:2%;
     font-size: xx-large;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 
 .main {
@@ -78,3 +172,26 @@ video {
     height: auto;
     width: auto;
  }
+
+ media (max-width: 600px) {
+    .main {
+       display:block;
+    }
+
+    .writing {
+        display:block;
+    }
+
+    .subway {
+        display:block;
+    }
+
+    .visuals {
+        display:block;
+    }
+
+    .waterbottle {
+        display:block;
+    }
+ 
+}
