@@ -4,6 +4,7 @@ body {
     background-color: #ffddb0;
     text-align: center;
     margin: auto;
+    display: grid;
 }
 
 h1 {
@@ -28,13 +29,161 @@ h2 {
     background-color:#ffddb0;
 }
 
-.buttons {
-    background-color:#ffddb0;
-    padding: 1%;
+.projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pubs clue"
+    "addams loveletters"
+    "jd misc"
+}
+
+.clue {
+    grid-area:"clue";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cluetitle cluepic"
+}
+
+.cluepic {
+    grid-area:"cluepic";
+}
+
+.cluetitle {
+    grid-area:"cluetitle";
+}
+
+.cluep {
+    grid-area:"cluetitle";
+}
+
+.addams {
+    grid-area:"addams";
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "addamstitle addamspic"
+}
+
+.addamspic {
+    grid-area:"addamspic";
+}
+
+.addamstitle {
+    grid-area:"addamstitle";
+}
+
+.addamsp {
+    grid-area:"addamstitle";
+}
+
+.jd {
+    grid-area:"jd";
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "jdtitle jdpic"
+}
+
+.jdpic {
+    grid-area:"jdpic";
+    grid-row:span 2;
+}
+
+.jdtitle {
+    grid-area:"jdtitle";
+}
+
+.jdp {
+    grid-area:"jdtitle";
+}
+
+.misc {
+    grid-area:"misc";
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "misctitle miscpic"
+}
+
+.miscpic {
+    grid-area:"miscpic";
+}
+
+.miscp {
+    grid-area:"misctitle";
+}
+
+.miscp {
+    grid-area:"misctitle";
+}
+
+.loveletters {
+    grid-area:"loveletters";
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "llpic lltitle"
+}
+
+.llpic {
+    grid-area:"llpic";
+}
+
+.lltitle {
+    grid-area:"lltitle";
+}
+
+.pubs {
+    grid-area:"pubs";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "ptitle pubpic"
+}
+
+.pubpic {
+    grid-area:"pubpic";
+    grid-row: span 2;
+}
+
+.pubp {
+    grid-area: "ptitle";
+}
+
+.pubtitle {
+    grid-area:"ptitle"
 }
 
 .logocontainer {
     background-color: #ffddb0;
+}
+
+.projects {
+    background-color: #AE6300;
+    margin:2%;
+    padding:2%;
+}
+
+p {
+    text-align:left;
+    margin: 1%;
+    color:white;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    color:white;
+    text-align:left;
+    font-size: 30px;
 }
 
 .menu {
@@ -47,7 +196,7 @@ h2 {
     font-family: 'Playfair Display', serif;
 }
 
-p {
+.aboutmetext {
     margin-left: 25%;
     margin-right: 25%;
     font-family: "Playfair Display", serif;
@@ -86,4 +235,19 @@ a:hover {
 
 a:active {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects {
+       display: block;
+       margin:0%;
+    }
+
+    h3 {
+        margin: 5%;
+    }
+
+    p {
+        margin:5%;
+    }
 }

@@ -19,7 +19,7 @@ footer {
 
 .writing {
     display:grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
     grid-template-rows:auto;
     grid-template-areas: 
     "title subway"
@@ -193,5 +193,4 @@ video {
     .waterbottle {
         display:block;
     }
- 
 }
